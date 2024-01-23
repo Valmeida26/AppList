@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //region Retorna o caminho do package mensionado na variavel appName
+    //region Returns the package path mentioned in the appName variable
     @SuppressLint("SetTextI18n")
     public String findAppPath() {
         String appName = "com.sec.factory.camera";
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //endregion
 
-    //region Retorna uma lista de aplicativos instalados no device
+    //region Returns a list of applications installed on the device
     public String listApp() {
         StringBuilder stringBuilder = new StringBuilder();
         PackageManager packageManager = getPackageManager();
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //endregion
 
-    //region Retorna a versao do android e do OS do device
+    //region Returns the Android and OS version of the device
     public String getAndroidVersion() {
         JSONObject object =  new JSONObject();
         String release = Build.VERSION.RELEASE;
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //endregion
 
-    //region Retorna o level do path do sistema
+    //region Returns the system path level
     public static String pathLevel(){
         JSONObject object = new JSONObject();
         String pathLevelmy = null;
